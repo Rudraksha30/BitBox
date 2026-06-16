@@ -16,6 +16,11 @@ nav {
   padding: 1rem;
 }
 
+.logo {
+  width: 150px;
+  height: auto;
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -54,7 +59,53 @@ nav ul li:last-child a:hover {
   color: red;
 }
 
-img {
-  width: 150px;
-  height: auto;
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: url("./media/bg.png") no-repeat center/cover;
+}
+
+.hero h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.hero p {
+  font-size: 20px;
+  color: white;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: darkred;
+}
+
+.hero button a {
+  text-decoration: none;
+  color: white;
+}
+
+.video-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid black;
+  padding: 50px;
+  gap: 40px;
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 20px;
 }
