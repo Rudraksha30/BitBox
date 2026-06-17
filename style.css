@@ -59,6 +59,8 @@ nav ul li:last-child a:hover {
   color: red;
 }
 
+/* index.html */
+
 .hero {
   display: flex;
   justify-content: center;
@@ -96,16 +98,88 @@ nav ul li:last-child a:hover {
   color: white;
 }
 
+
 .video-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 5px solid black;
   padding: 50px;
   gap: 40px;
+}
+
+.video-box {
+  flex: 1;
+}
+
+.video-text {
+  flex: 1;
 }
 
 .video-box video {
   width: 100%;
   border-radius: 20px;
+}
+
+.video-text h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.video-text p {
+  font-size: 18px;
+  color: rgb(255, 57, 57);
+}
+
+
+.about {
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  background: wheat;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color:brown;
+}
+
+.about p {
+  font-size: 18px;
+  color:chocolate;
+  line-height: 1.5;
+}
+
+
+/* menu.html */
+.card {
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card button {
+  background: red;
+  color:white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 2px;
+}
+
+.card button:hover {
+  background-color: darkred;
+}
+
+.menu-container {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 20px;
 }
