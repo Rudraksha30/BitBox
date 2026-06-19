@@ -59,6 +59,12 @@ nav ul li:last-child a:hover {
   color: red;
 }
 
+header {
+    position: sticky;
+    top: 0;
+
+}
+
 /* index.html */
 
 .hero {
@@ -183,3 +189,41 @@ nav ul li:last-child a:hover {
   gap: 15px;
   padding: 20px;
 }
+
+.icon-box img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding: 3px;
+  transition: 0.3s ease-in-out;
+}
+
+.category-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color:lightgoldenrodyellow;
+}
+
+.icon-box {
+  text-align: center;
+  cursor: pointer;
+}
+
+.icon-box p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.icon-box img:hover {
+  border-color: red;
+  transform: scale(1.2);
+}
+
+.icon-box p:hover {
+  color: red;
+}
+
