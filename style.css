@@ -227,3 +227,10 @@ header {
   color: red;
 }
 
+
+/* cart.html */
+
+.item img {
+  width: 150px; 
+  height: auto;
+}
