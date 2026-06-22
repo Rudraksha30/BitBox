@@ -229,8 +229,107 @@ header {
 
 
 /* cart.html */
+.cart {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+table {
+  width: 80%;
+  background:peachpuff;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
 
 .item img {
-  width: 150px; 
+  width: 100px; 
   height: auto;
+  border-radius: 10px;
+}
+
+thead {
+  background:brown;
+  color: white;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+}
+
+tr {
+  border-bottom: 1px solid black;
+}
+
+.item h4 {
+  margin-bottom: 20px;
+}
+
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-box button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.qty-box button:hover {
+  background: darkred;
+}
+
+.remove {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: darkred;
+}
+
+.grand-total {
+  align-items: center;
+  gap: 10px;
+}
+
+.grand-total button {
+  width: 110px;
+  height: auto;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grand-total button:hover {
+  background: darkred;
+}
+
+.grand-total td {
+  font-size: 20px;
 }
