@@ -1,13 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico" />
-    <title>BiteBox - Login</title>
-</head>
-<body>
-    <p>this is login page</p>
-</body>
+
+    <title>BitBox - Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- logo -->
+        <img class="logo" src="./img/logo.png" alt="BitBox Logo" />
+
+        <!-- Menu -->
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="bitedeals.html">Bite Deals</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+          </li>
+          <li>
+            <a href="login.html"
+              ><i class="fa-solid fa-right-from-bracket"></i>Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="auth-container">
+      <div class="auth-box">
+        <h2>Login to BitBox</h2>
+        <form>
+          <input type="email" placeholder="Enter Email" required />
+          <input type="password" placeholder="Enter password" required />
+          <button type="submit">Login</button>
+          <p><a href="./signup.html">Forgot Password</a></p>
+          <p>Don't have an Account? <a href="./signup.html">Sign Up</a></p>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
