@@ -333,3 +333,65 @@ tr {
 .grand-total td {
   font-size: 20px;
 }
+
+/* Auth (login.html, signup.html) */
+
+.auth-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.auth-box {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.auth-box h2  {
+  margin-bottom: 20px;
+  color: rgb(4, 4, 77);
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+}
+
+.auth-box input:focus {
+  border-color: red;
+}
+
+.auth-box button {
+  width: 80%;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.auth-box button:hover {
+  background: darkred;
+}
+
+.auth-box p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-box a{
+  text-decoration: none;
+  color: darkred;
+}
+
