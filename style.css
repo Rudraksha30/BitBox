@@ -395,3 +395,78 @@ tr {
   color: darkred;
 }
 
+/* Bitedeals.html */
+.deals-page {
+  padding: 40px;
+  background-color: red;
+}
+
+.deal-hero {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.deal-hero h1 {
+  font-size: 40px;
+}
+
+.deal-hero p {
+  font-size: 18px;
+}
+
+.combo-section {
+  padding: 40px;
+  background-color: red;
+}
+
+.combo-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.combo-card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.combo-card {
+  background-color: ghostwhite;
+  padding: 20px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.2s ease-in;
+}
+
+.combo-card:hover {
+  transform: translateY(-8px);
+}
+
+.combo-card h4 {
+  margin: 10px 0;
+}
+
+.combo-card h4 span {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 10px;
+}
+
+.combo-card button {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.combo-card button:hover {
+  background-color: darkred;
+}
