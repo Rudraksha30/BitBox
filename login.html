@@ -43,15 +43,30 @@
 
     <section class="auth-container">
       <div class="auth-box">
-        <h2>Login to Bit<span style="color: red;">Box</span></h2>
+        <h2>Login to Bit<span style="color: red">Box</span></h2>
         <form>
-          <input type="email" placeholder="Enter Email" required />
-          <input type="password" placeholder="Enter password" required />
-          <button type="submit">Login</button>
+          <input type="email" placeholder="Enter Email" id="email" required />
+          <div style="position: relative">
+            <input
+              type="password"
+              placeholder="Enter password"
+              id="password"
+              required
+            />
+            <i
+              class="fa-solid fa-eye"
+              onclick="togglePassword()"
+              style="position: absolute; top: 20px; right: 10px"
+            ></i>
+          </div>
+          <button type="button" onclick="login()">Login</button>
+          <p id="error" style="color: red"></p>
           <p><a href="./signup.html">Forgot Password</a></p>
           <p>Don't have an Account? <a href="./signup.html">Sign Up</a></p>
         </form>
       </div>
     </section>
+
+    <script src="script.js"></script>
   </body>
 </html>

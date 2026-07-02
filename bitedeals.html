@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/x-icon" href="./img/favicon_io/favicon.ico" />
     <title>BiteBox - Bite Deals</title>
-<link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -18,27 +18,26 @@
   <body>
     <header>
       <nav>
-        
-          <!-- logo -->
-<img class="logo" src="./img/logo.png"  alt="BitBox Logo" />
-          <!-- Menu -->
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="bitedeals.html" class="active" >Bite Deals</a></li>
-            <li>
-              <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
-            </li>
-            <li>
-              <a href="login.html"
-                ><i class="fa-solid fa-right-from-bracket"></i>Login</a
-              >
-            </li>
-          </ul>
-        
+        <!-- logo -->
+        <img class="logo" src="./img/logo.png" alt="BitBox Logo" />
+        <!-- Menu -->
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="bitedeals.html" class="active">Bite Deals</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+          </li>
+          <li>
+            <a href="login.html"
+              ><i class="fa-solid fa-right-from-bracket"></i>Login</a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
 
+    <!-- header of the bitedeals -->
     <section class="deals-page">
       <div class="deal-hero">
         <h1>Bite Deals</h1>
@@ -46,11 +45,12 @@
       </div>
     </section>
 
+    <!-- combo section of the bitedeals -->
     <section class="combo-section">
-      <h2 class="section-title"></h2>
+      <h2 class="section-title">Today's Combo offer</h2>
       <div class="combo-container">
         <div class="combo-card">
-          <img src="./media/burger-meal.png" alt="Burger Combo Meal">
+          <img src="./media/burger-meal.png" alt="Burger Combo Meal" />
           <h3>Burger + Fries + Coke</h3>
           <p>Perfect snacks combo</p>
           <h4><span>Rs.359</span> Rs.199</h4>
@@ -58,19 +58,62 @@
         </div>
 
         <div class="combo-card">
-          <img src="./media/pizza-meal.png" alt="Pizza Combo Meal">
+          <img src="./media/pizza-meal.png" alt="Pizza Combo Meal" />
           <h3>Pizza + Coke</h3>
           <p>Perfect snacks combo</p>
           <h4><span>Rs.299</span> Rs.199</h4>
           <button>Order Now</button>
         </div>
-        
+
         <div class="combo-card">
-          <img src="./media/pasta-meal.png" alt="Pasta Combo Meal">
+          <img src="./media/pasta-meal.png" alt="Pasta Combo Meal" />
           <h3>Pasta + Garlic Bread</h3>
           <p>Perfect snacks combo</p>
           <h4><span>Rs.249</span> Rs.159</h4>
           <button>Order Now</button>
+        </div>
+      </div>
+
+      <h2 class="section-title">Special day's offer</h2>
+      <div class="deals-container">
+        <div class="deal-card">
+          <h3>Friday Fest</h3>
+          <p>50% OFF on Burgers</p>
+          <span>Use Code: FRI50</span>
+        </div>
+
+        <div class="deal-card">
+          <h3>Saturday Specials</h3>
+          <p>Buy 1 get 1 Pizza free</p>
+          <span>Use Code: SATPIZZA</span>
+        </div>
+
+        <div class="deal-card">
+          <h3>Sunday Treat</h3>
+          <p>Flat Rs 120 OFF</p>
+          <span>Use Code: SUN120</span>
+        </div>
+      </div>
+
+      <h2 class="section-title">Hot Deals</h2>
+      <div class="deals-container">
+
+        <div class="deal-card red">
+          <h3>Free Delivery</h3>
+          <p>On all Burgers</p>
+          <span>BURGERS</span>
+        </div>
+
+        <div class="deal-card yellow">
+          <h3>50% OFF</h3>
+          <p>On first Order</p>
+          <span>FREEDEL</span>
+        </div>
+
+        <div class="deal-card green">
+          <h3>Flat Rs100 off</h3>
+          <p>Above Rs 499</p>
+          <span>SAVE100</span>
         </div>
       </div>
     </section>
