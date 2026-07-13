@@ -7,6 +7,7 @@
   font-family: "Black Ops One", cursive;
 }
 
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,6 +56,14 @@ nav ul li:last-child a:hover {
   background-color: black;
 }
 
+.menu-btn {
+  font-size: 22px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
 .active {
   color: red;
 }
@@ -62,7 +71,152 @@ nav ul li:last-child a:hover {
 header {
     position: sticky;
     top: 0;
+}
 
+/* Footer */
+footer {
+  background: black;
+  color: aliceblue;
+  padding: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer-box h2, .footer-box h3 {
+  color: antiquewhite;
+  margin-bottom: 15px;
+}
+
+footer  a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: red;
+}
+
+footer a i {
+  font-size: 25px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 2px solid gray;
+}
+
+@media(max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  nav .logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .menu-btn {
+    display: block;
+    background-color: red;
+    color: whitesmoke;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+    display: none;
+  }
+
+  nav ul.shows {
+    display: block;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .hero {
+    height: 70vh;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .video-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .about {
+    padding: 30px 15px;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+
+  .deals-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .combo-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .category-icons {
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 15px;
+  }
+
+  .icon-box {
+    min-width: 80px;
+  }
+
+  .cart {
+    padding: 20px 10px;
+  }
+
+  table {
+    width: 100%
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
 }
 
 /* index.html */
@@ -103,7 +257,6 @@ header {
   text-decoration: none;
   color: white;
 }
-
 
 .video-section {
   display: flex;
@@ -184,7 +337,7 @@ header {
 }
 
 .menu-container {
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
   padding: 20px;
@@ -431,7 +584,7 @@ tr {
 
 .combo-card img {
   width: 100%;
-  height: 350px;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -509,3 +662,4 @@ tr {
 .green {
   border-top: 5px solid green;
 }
+

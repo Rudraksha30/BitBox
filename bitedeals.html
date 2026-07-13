@@ -20,8 +20,11 @@
       <nav>
         <!-- logo -->
         <img class="logo" src="./img/logo.png" alt="BitBox Logo" />
-        <!-- Menu -->
-        <ul>
+        <button class="menu-btn" onclick="toggleMenu()">
+          <i id="menuIcon" class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="navMenu">
           <li><a href="home.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="bitedeals.html" class="active">Bite Deals</a></li>
@@ -118,5 +121,6 @@
       </div>
     </section>
 
+    <script src="script.js"></script>
   </body>
 </html>

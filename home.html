@@ -24,8 +24,11 @@
         <!-- logo -->
         <img class="logo" src="./img/logo.png" alt="BitBox Logo" />
 
-        <!-- Menu -->
-        <ul>
+        <button class="menu-btn" onclick="toggleMenu()">
+          <i id="menuIcon" class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul id="navMenu">
           <li><a href="home.html" class="active">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="bitedeals.html">Bite Deals</a></li>
@@ -75,6 +78,40 @@
         every order brings satisfaction and joy.
       </p>
     </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <h2>BiteBox</h2>
+          <p>For Your one-Click delivery for delicious bites!</p>
+        </div>
+        <div class="footer-box">
+          <h3>Quicks Links</h3>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./bitedeals.html">Bitedeals</a></li>
+            <li><a href="./cart.html">cart</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <p>Email: bitedeals@gmail.com</p>
+          <p>Phone: +91 9657964363</p>
+        </div>
+        <div class="footer-box">
+          <h3>Follow Us</h3>
+          <a href="https://www.instagram.com/bitebox_hotchicken/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <span>|</span>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <span>|</span>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 BiteBox | All Right Reserved.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
